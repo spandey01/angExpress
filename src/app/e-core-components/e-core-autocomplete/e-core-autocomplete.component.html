@@ -1,0 +1,12 @@
+
+<div ngui-auto-complete
+        [source]="arrayOfStrings"
+        [accept-user-input]="true"
+        [auto-select-first-item]="false"
+        [select-on-blur]="true"
+        [max-num-list]= "6"
+        (ngModelChange)="myCallback1($event)"
+        (customSelected)="customCallback($event)"
+        placeholder="enter text">
+        <input id="model1" [ngModel]="model1" autofocus />
+      </div>

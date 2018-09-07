@@ -1,0 +1,116 @@
+<div class="row mar-top">
+  <div class="card col-md-5 mar-left">
+    <div class="card-header">
+      <ul class="nav nav-tabs" id="myTab" role="tablist">
+        <li class="nav-item">
+          <a class="nav-link active" id="material-Component" data-toggle="tab" href="#materialComponent" role="tab" aria-controls="materialComponent"
+            aria-selected="true">Material Component</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" id="material-ComponentCode" data-toggle="tab" href="#materialComponentCode" role="tab" aria-controls="materialComponentCode"
+            aria-selected="false">Code</a>
+        </li>
+      </ul>
+    </div>
+    <div class="card-body">
+      <div class="tab-content" id="myTabContent">
+        <div class="tab-pane fade show active" id="materialComponent" role="tabpanel" aria-labelledby="material-Component">
+          <router-outlet name="basic"></router-outlet>
+        </div>
+        <div class="tab-pane fade" id="materialComponentCode" role="tabpanel" aria-labelledby="material-ComponentCode">
+          <!-- <router-outlet name="basic"></router-outlet> -->
+          <!-- <p>Coming soon</p> -->
+          <div class="bd-clipboard">
+            <button (click)="copyToClipboard('someCode')" class="btn-clipboard" title="" data-original-title="Copy to clipboard">Copy</button>
+          </div>
+          <div highlight="all">
+            <!-- <textarea id="someCode"></textarea> -->
+            <pre><code [textContent]="someCode"></code></pre>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- <div class="card-footer">Basic Component</div> -->
+  </div>
+  <div class="card col-md-5 mar-left">
+    <div class="card-header">
+      <ul class="nav nav-tabs" id="myTab" role="tablist">
+        <li class="nav-item">
+          <a class="nav-link active" id="core-Component" data-toggle="tab" href="#coreComponent" role="tab" aria-controls="materialComponent"
+            aria-selected="true">Core Component</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" id="core-ComponentCode" data-toggle="tab" href="#coreComponentCode" role="tab" aria-controls="materialComponentCode"
+            aria-selected="false">Code</a>
+        </li>
+      </ul>
+    </div>
+    <div class="card-body">
+      <div class="tab-content" id="myTabContent">
+        <div class="tab-pane fade show active" id="coreComponent" role="tabpanel" aria-labelledby="material-Component">
+          <router-outlet name="core"></router-outlet>
+        </div>
+        <div class="tab-pane fade" id="coreComponentCode" role="tabpanel" aria-labelledby="material-ComponentCode">
+          <!-- <router-outlet name="basic"></router-outlet> -->
+          <p>Coming soon</p>
+        </div>
+      </div>
+    </div>
+    <!-- <div class="card-footer">Basic Component</div> -->
+  </div>
+</div>
+
+<div class="row mar-top">
+  <div class="card col-md-5 mar-left">
+    <div class="card-header">
+      <ul class="nav nav-tabs" id="myTab" role="tablist">
+        <li class="nav-item">
+          <a class="nav-link active" id="material-custom-Component" data-toggle="tab" href="#materialCustomComponent" role="tab" aria-controls="materialComponent"
+            aria-selected="true">Material Custom Component</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" id="material-custom-ComponentCode" data-toggle="tab" href="#materialCustomComponentCode" role="tab" aria-controls="materialComponentCode"
+            aria-selected="false">Code</a>
+        </li>
+      </ul>
+    </div>
+    <div class="card-body">
+      <div class="tab-content" id="myTabContent">
+        <div class="tab-pane fade show active" id="materialCustomComponent" role="tabpanel" aria-labelledby="material-Component">
+          <p>Coming soon</p>
+        </div>
+        <div class="tab-pane fade" id="materialCustomComponentCode" role="tabpanel" aria-labelledby="material-ComponentCode">
+          <!-- <router-outlet name="basic"></router-outlet> -->
+          <p>Coming soon</p>
+        </div>
+      </div>
+    </div>
+    <!-- <div class="card-footer">Footer</div> -->
+  </div>
+  <div class="card col-md-5 mar-left">
+    <div class="card-header">
+      <ul class="nav nav-tabs" id="myTab" role="tablist">
+        <li class="nav-item">
+          <a class="nav-link active" id="core-custom-Component" data-toggle="tab" href="#coreCustomComponent" role="tab" aria-controls="materialComponent"
+            aria-selected="true">Core Custom Component</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" id="core-custom-ComponentCode" data-toggle="tab" href="#coreCustomComponentCode" role="tab" aria-controls="materialComponentCode"
+            aria-selected="false">Code</a>
+        </li>
+      </ul>
+    </div>
+    <div class="card-body">
+      <div class="tab-content" id="myTabContent">
+        <div class="tab-pane fade show active" id="coreCustomComponent" role="tabpanel" aria-labelledby="material-Component">
+          <p>Coming soon</p>
+        </div>
+        <div class="tab-pane fade" id="coreCustomComponentCode" role="tabpanel" aria-labelledby="material-ComponentCode">
+          <!-- <router-outlet name="basic"></router-outlet> -->
+          <p>Coming soon</p>
+        </div>
+      </div>
+    </div>
+    <!-- <div class="card-footer">Footer</div> -->
+  </div>
+</div>
